@@ -7,15 +7,27 @@
 	<body>
 		<p id ="text"> Javascript DOM :: Changing paragraph style</p>
 		<div>
-		<button id="style" onclick="js_new_style()">New style
+			<button id = "style" onclick="js_prev_style()">Previous style </button>
+			<script>
+			function js_prev_style(){
+				
+				document.getElementById("text").style.color = "black";
+				document.getElementById("text").style.fontFamily = "Arial";
+				document.getElementById("text").style.fontSize = "smaller";
+			}
+			</script>
+				
+			<button id="style" onclick="js_new_style()">New style </button>
+			<script>
+			
+			function js_new_style(){
 		
-		</button>
-		<script>
-			document.getElementById("text").style.color = "blue";
-			document.getElementById("text").style.fontFamily = "Arial";
-			document.getElementById("text").style.fontSize = "larger";
-		</script>
-		
+				document.getElementById("text").style.color = "blue";
+				document.getElementById("text").style.fontFamily = "Arial";
+				document.getElementById("text").style.fontSize = "larger";
+				
+			}
+			</script>
 		</div>
 	</body>
 </html>
