@@ -5,11 +5,17 @@
 		<title> INFO30005 :: JavaScript - Workshop #2 </title>
 	</head>
 	<body>
-		<p id ='text'> Javascript DOM :: Changing paragraph style</p>
+		<p id ="text"> Javascript DOM :: Changing paragraph style</p>
 		<div>
-		<button id="style" onclick="js_new_style()">New style</button>
+		<button id="style" onclick="js_new_style()">New style
+		
+		</button>
 		<script>
-			document.getElementBy("text").style.colour = "blue"
+			document.getElementById("text").style.color = "blue";
+			document.getElementById("text").style.fontFamily = "Arial";
+			document.getElementById("text").style.fontSize = "larger";
+		</script>
+		
 		</div>
 	</body>
 </html>
